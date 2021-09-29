@@ -347,6 +347,10 @@ section {
 /*--------------------------------------------------------------
 # My Portfolio
 --------------------------------------------------------------*/
+.portfolio {
+    background-color: #dde1e4;
+}
+
 .portfolio #portfolio-flters {
     list-style: none;
     margin-bottom: 20px;
@@ -362,7 +366,7 @@ section {
     text-transform: uppercase;
     color: #444444;
     transition: all 0.3s ease-in-out;
-    border: 2px solid #fff;
+    border: 2px solid #dde1e4;
 }
 .portfolio #portfolio-flters li:hover,
 .portfolio #portfolio-flters li.filter-active {
@@ -408,14 +412,15 @@ section {
 
 .portfolio .portfolio-item .portfolio-info {
     transition: all ease-in-out 0.3s;
-    background: rgba(0, 0, 0, 0.5);
+    background: white;
+    box-shadow: 0px 2px 1px -1px rgba(0, 0, 0, 0.2),
+        0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 1px 3px 0px rgba(0, 0, 0, 0.12);
     padding: 1rem;
     font-family: "Open Sans", sans-serif;
 }
 .portfolio .portfolio-item .portfolio-info h4 {
     font-family: "Open Sans", sans-serif;
-
-    color: #fff;
+    color: #2e3c40;
     margin: 0 0 0.142857143em;
     font-size: 2rem;
     transition: color 0.45s ease, border 0.45s ease;
@@ -434,14 +439,17 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info__meta span {
-    color: #fff;
+    color: #627084;
     display: flex;
     align-items: center;
     font-size: 0.8rem;
     margin-bottom: 1rem;
+    font-weight: 600;
 }
 .portfolio .portfolio-item .portfolio-info p {
-    color: rgba(255, 255, 255, 0.8);
+    font-family: "Open Sans", sans-serif;
+    font-weight: 500;
+    color: #2e3c40;
     font-size: 14px;
     margin-bottom: 0;
 }
@@ -455,10 +463,11 @@ section {
 }
 
 .portfolio .portfolio-item .portfolio-info__action a {
-    color: #fff;
+    color: #393e46;
     text-decoration: none;
     cursor: pointer;
     transition: color 0.3s ease;
+    font-weight: 600;
 }
 
 .portfolio .portfolio-item .portfolio-info__action a:hover {

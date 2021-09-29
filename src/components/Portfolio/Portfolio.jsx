@@ -69,7 +69,7 @@ const Portfolio = () => {
                 <ResponsiveMasonry
                     columnsCountBreakPoints={{ 400: 1, 750: 2, 900: 3 }}
                 >
-                    <Masonry gutter={12}>
+                    <Masonry gutter={10}>
                         {projects
                             .filter(
                                 items =>

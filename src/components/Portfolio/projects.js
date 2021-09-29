@@ -6,6 +6,7 @@ import work5 from "../../assets/images/portfolio/portfolio-5.jpg";
 import work6 from "../../assets/images/portfolio/portfolio-6.jpg";
 import work7 from "../../assets/images/portfolio/portfolio-7.jpg";
 import work8 from "../../assets/images/portfolio/portfolio-8.jpg";
+import work9 from "../../assets/images/portfolio/portfolio-9.jpg";
 
 export const projects = [
     {
@@ -128,6 +129,22 @@ export const projects = [
         language: "Javascript",
         date: "2020-05-01",
     },
+    {
+        id: 9,
+        image: work9,
+        title: "Mockup box with paints",
+        subtitle: "Photography",
+        category: "Development",
+        description: `Lorem ipsum dolor sit amet consectetur adipisicing elit.
+    Nobis aperiam perspiciatis vitae vero fuga, doloremque
+    voluptatum molestias consequatur in maxime amet quibusdam
+    eius maiores aut exercitationem voluptate alias omnis
+    sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
+
+    }
 ];
 
 export const projectImages = [
@@ -139,4 +156,5 @@ export const projectImages = [
     work6,
     work7,
     work8,
+    work9,
 ];

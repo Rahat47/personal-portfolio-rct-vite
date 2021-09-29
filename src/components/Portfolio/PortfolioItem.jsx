@@ -7,7 +7,7 @@ import {
 
 const PortfolioItem = ({ item, setIsOpen, setPhotoIndex }) => {
     return (
-        <div className="portfolio-item filter-app">
+        <div className="portfolio-item ">
             <div className="portfolio-img">
                 <img
                     src={item.image}
