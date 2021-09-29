@@ -4,6 +4,7 @@ import { Link } from "react-scroll";
 const HeroSection = () => {
     return (
         <section id="hero">
+            <div id="home"></div>
             <div className="hero-container">
                 <h1>Rayhan Rahat</h1>
                 <h2>I&apos;m a Professional Web Developer In New York City</h2>

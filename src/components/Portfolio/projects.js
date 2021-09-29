@@ -19,6 +19,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 2,
@@ -31,6 +34,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Typescript",
+        date: "2020-05-01",
     },
     {
         id: 3,
@@ -43,6 +49,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 4,
@@ -55,6 +64,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 5,
@@ -67,6 +79,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 6,
@@ -79,6 +94,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 7,
@@ -91,6 +109,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
     {
         id: 8,
@@ -103,6 +124,9 @@ export const projects = [
     voluptatum molestias consequatur in maxime amet quibusdam
     eius maiores aut exercitationem voluptate alias omnis
     sapiente?`,
+        link: "https://www.google.com",
+        language: "Javascript",
+        date: "2020-05-01",
     },
 ];
 

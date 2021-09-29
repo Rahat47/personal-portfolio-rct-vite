@@ -11,6 +11,8 @@ import {
     RiPhoneFill,
 } from "react-icons/ri";
 
+import FadeIn from "react-fade-in";
+
 const socialLinks = [
     {
         id: 1,
@@ -67,111 +69,122 @@ const ContactMe = () => {
                     <Col lg={6}>
                         <Row>
                             <Col md={12}>
-                                <div className="info-box">
-                                    <i className="share">
-                                        <RiShareFill />
-                                    </i>
+                                <FadeIn>
+                                    <div className="info-box">
+                                        <i className="share">
+                                            <RiShareFill />
+                                        </i>
 
-                                    <h3>Social Profiles</h3>
-                                    <div className="social-links">
-                                        {socialLinks.map(link => (
-                                            <a
-                                                key={link.id}
-                                                href={link.link}
-                                                target="_blank"
-                                                rel="noopener noreferrer"
-                                                style={{ color: link.color }}
-                                            >
-                                                {link.icon}
-                                            </a>
-                                        ))}
+                                        <h3>Social Profiles</h3>
+                                        <div className="social-links">
+                                            {socialLinks.map(link => (
+                                                <FadeIn key={link.id}>
+                                                    <a
+                                                        href={link.link}
+                                                        target="_blank"
+                                                        rel="noopener noreferrer"
+                                                        style={{
+                                                            color: link.color,
+                                                        }}
+                                                    >
+                                                        {link.icon}
+                                                    </a>{" "}
+                                                </FadeIn>
+                                            ))}
+                                        </div>
                                     </div>
-                                </div>
+                                </FadeIn>
                             </Col>
 
                             <Col md={6}>
-                                <div className="info-box mt-4">
-                                    <i className="share">
-                                        <RiMailSendFill />
-                                    </i>
-                                    <h3>Email Me</h3>
-                                    <p>contact@example.com</p>
-                                </div>
+                                <FadeIn>
+                                    <div className="info-box mt-4">
+                                        <i className="share">
+                                            <RiMailSendFill />
+                                        </i>
+                                        <h3>Email Me</h3>
+                                        <p>contact@example.com</p>
+                                    </div>
+                                </FadeIn>
                             </Col>
                             <Col md={6}>
-                                <div className="info-box mt-4">
-                                    <i className="share">
-                                        <RiPhoneFill />
-                                    </i>
-                                    <h3>Call Me</h3>
-                                    <p>+1 5589 55488 55</p>
-                                </div>
+                                <FadeIn>
+                                    <div className="info-box mt-4">
+                                        <i className="share">
+                                            <RiPhoneFill />
+                                        </i>
+                                        <h3>Call Me</h3>
+                                        <p>+1 5589 55488 55</p>
+                                    </div>
+                                </FadeIn>
                             </Col>
                         </Row>
                     </Col>
 
                     <Col lg={6}>
-                        <form
-                            role="form"
-                            onSubmit={e => {
-                                e.preventDefault();
-                                console.log("Submitted");
-                                alert("Submitted");
-                            }}
-                            className="email-form"
-                        >
-                            <div className="row">
-                                <div className="col-md-6 form-group">
+                        <FadeIn>
+                            <form
+                                role="form"
+                                onSubmit={e => {
+                                    e.preventDefault();
+                                    console.log("Submitted");
+                                    alert("Submitted");
+                                }}
+                                className="email-form"
+                            >
+                                <div className="row">
+                                    <div className="col-md-6 form-group">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            className="form-control"
+                                            id="name"
+                                            placeholder="Your Name"
+                                            required
+                                        />
+                                    </div>
+                                    <div className="col-md-6 form-group mt-3 mt-md-0">
+                                        <input
+                                            type="email"
+                                            className="form-control"
+                                            name="email"
+                                            id="email"
+                                            placeholder="Your Email"
+                                            required
+                                        />
+                                    </div>
+                                </div>
+                                <div className="form-group mt-3">
                                     <input
                                         type="text"
-                                        name="name"
                                         className="form-control"
-                                        id="name"
-                                        placeholder="Your Name"
+                                        name="subject"
+                                        id="subject"
+                                        placeholder="Subject"
                                         required
                                     />
                                 </div>
-                                <div className="col-md-6 form-group mt-3 mt-md-0">
-                                    <input
-                                        type="email"
+                                <div className="form-group mt-3">
+                                    <textarea
                                         className="form-control"
-                                        name="email"
-                                        id="email"
-                                        placeholder="Your Email"
+                                        name="message"
+                                        rows="6"
+                                        placeholder="Message"
                                         required
-                                    />
+                                    ></textarea>
                                 </div>
-                            </div>
-                            <div className="form-group mt-3">
-                                <input
-                                    type="text"
-                                    className="form-control"
-                                    name="subject"
-                                    id="subject"
-                                    placeholder="Subject"
-                                    required
-                                />
-                            </div>
-                            <div className="form-group mt-3">
-                                <textarea
-                                    className="form-control"
-                                    name="message"
-                                    rows="6"
-                                    placeholder="Message"
-                                    required
-                                ></textarea>
-                            </div>
-                            <div className="my-3">
-                                <div className="loading">Loading</div>
-                                <div className="error-message"></div>
-                                <div className="sent-message">
-                                    Your message has been sent. Thank you!
+                                <div className="my-3">
+                                    <div className="loading">Loading</div>
+                                    <div className="error-message"></div>
+                                    <div className="sent-message">
+                                        Your message has been sent. Thank you!
+                                    </div>
                                 </div>
-                            </div>
-                            <div className="text-center">
-                                <button type="submit">Send Message</button>
-                            </div>
-                        </form>
+                                <div className="text-center">
+                                    <button type="submit">Send Message</button>
+                                </div>
+                            </form>
+                        </FadeIn>
                     </Col>
                 </Row>
             </Container>

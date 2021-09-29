@@ -10,7 +10,7 @@ function App() {
     return (
         <>
             <Navbar />
-            <main id="home">
+            <main>
                 <HeroSection />
                 <About />
                 <Portfolio />

@@ -56,7 +56,7 @@ const Navbar = () => {
                                 <Nav.Item key={i}>
                                     <Link
                                         onClick={handleClose}
-                                        className="nav-link "
+                                        className="nav-link"
                                         activeClass="active"
                                         to={`${link.link}`}
                                         spy
