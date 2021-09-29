@@ -1,7 +1,6 @@
 import { defineConfig } from "vite";
 import react from "@vitejs/plugin-react";
 import eslintPlugin from "vite-plugin-eslint";
-import compress from "vite-plugin-compress";
 import viteImagemin from "vite-plugin-imagemin";
 
 // https://vitejs.dev/config/
@@ -9,7 +8,6 @@ export default defineConfig({
     plugins: [
         react(),
         eslintPlugin(),
-        compress(),
         viteImagemin({
             gifsicle: {
                 optimizationLevel: 7,
