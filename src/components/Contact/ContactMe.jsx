@@ -11,8 +11,7 @@ import {
     RiPhoneFill,
 } from "react-icons/ri";
 
-import FadeIn from "react-fade-in";
-
+import { Fade } from "react-reveal";
 const socialLinks = [
     {
         id: 1,
@@ -69,7 +68,7 @@ const ContactMe = () => {
                     <Col lg={6}>
                         <Row>
                             <Col md={12}>
-                                <FadeIn>
+                                <Fade bottom>
                                     <div className="info-box">
                                         <i className="share">
                                             <RiShareFill />
@@ -78,7 +77,11 @@ const ContactMe = () => {
                                         <h3>Social Profiles</h3>
                                         <div className="social-links">
                                             {socialLinks.map(link => (
-                                                <FadeIn key={link.id}>
+                                                <Fade
+                                                    bottom
+                                                    cascade
+                                                    key={link.id}
+                                                >
                                                     <a
                                                         href={link.link}
                                                         target="_blank"
@@ -89,15 +92,15 @@ const ContactMe = () => {
                                                     >
                                                         {link.icon}
                                                     </a>{" "}
-                                                </FadeIn>
+                                                </Fade>
                                             ))}
                                         </div>
                                     </div>
-                                </FadeIn>
+                                </Fade>
                             </Col>
 
                             <Col md={6}>
-                                <FadeIn>
+                                <Fade bottom>
                                     <div className="info-box mt-4">
                                         <i className="share">
                                             <RiMailSendFill />
@@ -105,10 +108,10 @@ const ContactMe = () => {
                                         <h3>Email Me</h3>
                                         <p>contact@example.com</p>
                                     </div>
-                                </FadeIn>
+                                </Fade>
                             </Col>
                             <Col md={6}>
-                                <FadeIn>
+                                <Fade bottom>
                                     <div className="info-box mt-4">
                                         <i className="share">
                                             <RiPhoneFill />
@@ -116,13 +119,13 @@ const ContactMe = () => {
                                         <h3>Call Me</h3>
                                         <p>+1 5589 55488 55</p>
                                     </div>
-                                </FadeIn>
+                                </Fade>
                             </Col>
                         </Row>
                     </Col>
 
                     <Col lg={6}>
-                        <FadeIn>
+                        <Fade bottom>
                             <form
                                 role="form"
                                 onSubmit={e => {
@@ -184,7 +187,7 @@ const ContactMe = () => {
                                     <button type="submit">Send Message</button>
                                 </div>
                             </form>
-                        </FadeIn>
+                        </Fade>
                     </Col>
                 </Row>
             </Container>

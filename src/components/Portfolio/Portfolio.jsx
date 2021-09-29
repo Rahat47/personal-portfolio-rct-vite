@@ -6,8 +6,7 @@ import Lightbox from "react-image-lightbox";
 import SectionTitle from "../shared/SectionTitle";
 import PortfolioItem from "./PortfolioItem";
 import { projects, projectImages } from "./projects";
-import FadeIn from "react-fade-in";
-
+import { Fade } from "react-reveal";
 import "react-image-lightbox/style.css";
 
 const Portfolio = () => {
@@ -78,13 +77,13 @@ const Portfolio = () => {
                                     category === "All"
                             )
                             .map((item, i) => (
-                                <FadeIn key={i}>
+                                <Fade cascade bottom key={i}>
                                     <PortfolioItem
                                         item={item}
                                         setIsOpen={setIsOpen}
                                         setPhotoIndex={setPhotoIndex}
                                     />{" "}
-                                </FadeIn>
+                                </Fade>
                             ))}
                     </Masonry>
                 </ResponsiveMasonry>

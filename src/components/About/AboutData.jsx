@@ -1,13 +1,13 @@
 import { Col, Row } from "react-bootstrap";
 import { BiChevronRight } from "react-icons/bi";
-import FadeIn from "react-fade-in";
+import { Fade } from "react-reveal";
 
 const AboutData = () => {
     return (
         <Row>
             <Col lg={6}>
                 <ul>
-                    <FadeIn>
+                    <Fade bottom cascade>
                         <li>
                             <BiChevronRight />
                             <strong>Name:</strong>
@@ -37,13 +37,13 @@ const AboutData = () => {
                             <strong>City:</strong>
                             <span>New York, USA</span>
                         </li>
-                    </FadeIn>
+                    </Fade>
                 </ul>
             </Col>
 
             <Col lg={6}>
                 <ul>
-                    <FadeIn>
+                    <Fade cascade bottom>
                         <li>
                             {" "}
                             <BiChevronRight /> <strong>Age:</strong>{" "}
@@ -64,7 +64,7 @@ const AboutData = () => {
                             <strong>Freelance:</strong>
                             <span>Available</span>
                         </li>
-                    </FadeIn>
+                    </Fade>
                 </ul>
             </Col>
         </Row>

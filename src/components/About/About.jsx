@@ -6,8 +6,7 @@ import { FiSmile } from "react-icons/fi";
 import { AiFillHtml5, AiOutlineFundProjectionScreen } from "react-icons/ai";
 import { IoLogoCss3, IoLogoJavascript, IoLogoNodejs } from "react-icons/io";
 import Progress from "./Progress";
-import FadeIn from "react-fade-in";
-
+import { Fade } from "react-reveal";
 const skillsData = [
     {
         id: 1,
@@ -47,12 +46,12 @@ const About = () => {
     return (
         <section id="about" className="about">
             <Container>
-                <FadeIn delay={300}>
+                <Fade bottom>
                     <SectionTitle
                         title="About Me"
                         slogan="Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sed, ipsum! "
                     />
-                </FadeIn>
+                </Fade>
 
                 <Row>
                     <Col
@@ -72,21 +71,21 @@ const About = () => {
                                     md={6}
                                     className="mt-5 d-md-flex align-items-md-stretch"
                                 >
-                                    <FadeIn>
+                                    <Fade bottom>
                                         <CountBox
                                             icon={<FiSmile />}
                                             count={100}
                                             color="#20b38e"
                                             description="Happy Clients"
                                         />
-                                    </FadeIn>
+                                    </Fade>
                                 </Col>
 
                                 <Col
                                     md={6}
                                     className="mt-5 d-md-flex align-items-md-stretch"
                                 >
-                                    <FadeIn>
+                                    <Fade bottom>
                                         <CountBox
                                             icon={
                                                 <AiOutlineFundProjectionScreen />
@@ -95,20 +94,20 @@ const About = () => {
                                             color="#f5b642"
                                             description="Projects Completed"
                                         />
-                                    </FadeIn>
+                                    </Fade>
                                 </Col>
                             </Row>
                         </div>
 
                         <div className="skills-content ps-lg-4">
                             {skillsData.map(data => (
-                                <FadeIn key={data.id} delay={300}>
+                                <Fade bottom key={data.id} delay={300}>
                                     <Progress
                                         value={data.value}
                                         name={data.name}
                                         icon={data.icon}
                                     />
-                                </FadeIn>
+                                </Fade>
                             ))}
                         </div>
                     </Col>

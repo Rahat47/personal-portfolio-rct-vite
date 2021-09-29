@@ -1,13 +1,12 @@
-import FadeIn from "react-fade-in";
-
+import { Fade } from "react-reveal";
 const SectionTitle = ({ title, slogan }) => {
     return (
         <div className="section-title">
-            <FadeIn>
+            <Fade bottom>
                 <span>{title}</span>
                 <h2>{title}</h2>
                 <p>{slogan}</p>
-            </FadeIn>
+            </Fade>
         </div>
     );
 };
