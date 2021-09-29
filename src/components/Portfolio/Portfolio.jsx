@@ -24,7 +24,7 @@ const Portfolio = () => {
 
                 <ul
                     id="portfolio-flters"
-                    className="d-flex justify-content-center"
+                    className="d-flex justify-content-center flex-wrap"
                 >
                     <li
                         onClick={() => setCategory("All")}
